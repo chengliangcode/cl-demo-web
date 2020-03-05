@@ -9,15 +9,12 @@
     >
       <a-menu-item key="1">
         <a-icon type="pie-chart" />
-        <span>Option 1</span>
       </a-menu-item>
       <a-menu-item key="2">
         <a-icon type="desktop" />
-        <span>Option 2</span>
       </a-menu-item>
       <a-menu-item key="3">
         <a-icon type="inbox" />
-        <span>Option 3</span>
       </a-menu-item>
       <!-- <a-sub-menu key="sub1">
         <span slot="title">

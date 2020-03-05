@@ -6,7 +6,7 @@
       </a-layout-sider>
       <a-layout>
         <a-layout-header><cl-tabs/></a-layout-header>
-        <a-layout-content>Content</a-layout-content>
+        <a-layout-content ><cl-body/></a-layout-content>
         <a-layout-footer>Footer</a-layout-footer>
       </a-layout>
     </a-layout>
@@ -16,12 +16,14 @@
 <script>
 import ClSidebar from './ClSidebar.vue'
 import ClTabs from './ClTabs.vue'
+import ClBody from './ClBody.vue'
 
 export default {
   name: 'ClLayout',
   components:{
       ClSidebar,
-      ClTabs
+      ClTabs,
+      ClBody
   },
   data() {
     return {
@@ -32,7 +34,9 @@ export default {
 </script>
 
 <style scoped>
-
+#components-layout-demo-basic .ant-layout-header{
+    height: 84px;
+}
 #components-layout-demo-basic .ant-layout-header,
 #components-layout-demo-basic .ant-layout-footer {
   background: #FCFCFC;
@@ -49,6 +53,7 @@ export default {
 #components-layout-demo-basic .ant-layout-content {
   background: #FCFCFC;
   color: #FEFFFF;
+  padding: 0 10px;
   min-height: 120px;
   line-height: 120px;
 }

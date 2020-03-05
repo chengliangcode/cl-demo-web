@@ -19,6 +19,16 @@
         <span>权限设置</span>
       </a-menu-item>
     </a-menu>
+    <a-breadcrumb >
+      <a-breadcrumb-item>Home</a-breadcrumb-item>
+      <a-breadcrumb-item>
+        <a href>Application Center</a>
+      </a-breadcrumb-item>
+      <a-breadcrumb-item>
+        <a href>Application List</a>
+      </a-breadcrumb-item>
+      <a-breadcrumb-item>An Application</a-breadcrumb-item>
+    </a-breadcrumb>
   </div>
 </template>
 
@@ -29,7 +39,10 @@ export default {
 </script>
 
 <style scoped>
-.ant-menu-item{
-    padding: 0 100px;
+.ant-menu-item {
+  padding: 0 100px;
+}
+.ant-breadcrumb{
+    padding: 5px 10px;
 }
 </style>

@@ -1,19 +1,11 @@
 <template>
-  <div style="width: 256px;height:100%">
-    <!-- <a-button type="primary" @click="toggleCollapsed">
-      <a-icon :type="collapsed ? 'menu-unfold' : 'menu-fold'" />
-    </a-button>-->
-    
-    <!-- defaultSelectedKeys	初始选中的菜单项 key 数组 -->
-    <!-- defaultOpenKeys	初始展开的 SubMenu 菜单项 key 数组 -->
-    <!-- inlineCollapsed	inline 时菜单是否收起状态	 -->
-    <!-- inlineIndent	inline 模式的菜单缩进宽度 -->
+  <div :style="{height:'100%'}">
     <a-menu
       mode="inline"
       theme="light"
       :inlineIndent="24"
       :inlineCollapsed="collapsed"
-      class="menu"
+      :style="{height:'100%'}"
     >
       <a-menu-item key="1">
         <a-icon type="pie-chart" />
@@ -27,7 +19,7 @@
         <a-icon type="inbox" />
         <span>Option 3</span>
       </a-menu-item>
-      <a-sub-menu key="sub1">
+      <!-- <a-sub-menu key="sub1">
         <span slot="title">
           <a-icon type="mail" />
           <span>Navigation One</span>
@@ -36,8 +28,8 @@
         <a-menu-item key="6">Option 6</a-menu-item>
         <a-menu-item key="7">Option 7</a-menu-item>
         <a-menu-item key="8">Option 8</a-menu-item>
-      </a-sub-menu>
-      <a-sub-menu key="sub2">
+      </a-sub-menu>-->
+      <!-- <a-sub-menu key="sub2">
         <span slot="title">
           <a-icon type="appstore" />
           <span>Navigation Two</span>
@@ -48,7 +40,7 @@
           <a-menu-item key="11">Option 11</a-menu-item>
           <a-menu-item key="12">Option 12</a-menu-item>
         </a-sub-menu>
-      </a-sub-menu>
+      </a-sub-menu>-->
     </a-menu>
   </div>
 </template>
@@ -69,8 +61,5 @@ export default {
 </script>
 
 <style scoped>
-.menu {
-  height: 100%;
-}
 </style>
 
